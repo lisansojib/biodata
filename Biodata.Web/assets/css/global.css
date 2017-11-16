@@ -1,0 +1,773 @@
+body, td, div {
+  font-family: Arial,Tahoma,Verdana, sans-serif;
+  font-size: 13px; }
+
+p, form, label, h1, h2, h3, h4, table, td, tr, body {
+  margin: 0;
+  padding: 0; }
+
+input {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 13px; }
+
+select {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 13px; }
+
+textarea {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 13px; }
+
+.checkbox {
+  margin: 0;
+  padding: 0; }
+
+a:link, a:visited, a:active {
+  color: #104E8B;
+  text-decoration: none; }
+
+a:hover {
+  color: #CC0000;
+  text-decoration: none; }
+
+a.apata {
+  color: #808080;
+  background: none; }
+
+a.apata:hover {
+  color: #CC6600;
+  background: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #E2E6E9; }
+
+/*h1 { font-size: 22px }*/
+h2 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 14px; }
+
+.hnd {
+  cursor: pointer;
+  cursor: hand; }
+
+.hlp {
+  cursor: help; }
+
+.noli {
+  margin: 0;
+  padding: 0; }
+
+.noli li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.bod {
+  font-size: 1px; }
+
+.text10 {
+  font-size: 10px;
+  font-family: Tahoma; }
+
+.text11 {
+  font-size: 11px; }
+
+.text12 {
+  font-size: 12px; }
+
+.text14 {
+  font-size: 14px; }
+
+.text16 {
+  font-size: 16px; }
+
+.text18 {
+  font-size: 18px; }
+
+.nadpis10 {
+  font-size: 10px;
+  font-weight: bold; }
+
+.nadpis11 {
+  font-size: 11px;
+  font-weight: bold; }
+
+.nadpis12 {
+  font-size: 12px;
+  font-weight: bold; }
+
+.nadpis13 {
+  font-size: 13px;
+  font-weight: bold; }
+
+.nadpis14 {
+  font-size: 14px;
+  font-weight: bold; }
+
+.nadpis16 {
+  font-size: 16px;
+  font-weight: bold; }
+
+.nadpis17 {
+  font-size: 17px;
+  font-weight: bold; }
+
+.nadpis18 {
+  font-size: 18px;
+  font-weight: bold; }
+
+.nadpis22 {
+  font-size: 22px;
+  font-weight: bold; }
+
+#body {
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  text-align: center; }
+
+.main {
+  margin: 0 auto;
+  width: 930px;
+  border: 0px solid navy;
+  text-align: center; }
+
+.menu {
+  width: 200px;
+  float: left;
+  border: 0px solid green;
+  text-align: left; }
+
+.menu h2 {
+  font-size: 14px; }
+
+.pmenu {
+  width: 180px;
+  border: 0px solid #DFDFDF;
+  margin: 5px;
+  padding: 5px;
+  display: block; }
+
+.pmenus {
+  background-color: #F0F0F0; }
+
+.minikon_main {
+  width: 188px;
+  border: 1px solid #D1E4EF;
+  margin: 35px 0 0 5px;
+  display: block; }
+
+.minikon_nadpis {
+  text-align: center;
+  font-size: 16px;
+  background-color: #D1E4EF;
+  padding: 2px 0 1px 0;
+  color: #000;
+  margin: 1px; }
+
+.minikon_main div.prodatum {
+  font-size: 26px;
+  /*color: #13a500;*/
+  color: #007F05;
+  text-align: center;
+  display: block;
+  margin: 10px 0 5px 0; }
+
+.minikon_main div.prko p {
+  line-height: 24px;
+  position: relative;
+  right: 60px;
+  text-align: right; }
+
+.minikon_main div.prko span {
+  margin-right: 5px; }
+
+.minikon_main div.prko p img {
+  margin-top: 3px; }
+
+.minikontxt {
+  margin: 10px 0 0 15px;
+  line-height: 22px; }
+
+.minikon_main .imgznam {
+  margin: 0 0 5px 90px; }
+
+.divrek {
+  width: 190px;
+  margin: 35px 0 0 5px;
+  display: block; }
+
+.fb-box {
+  margin: 10px 0 0 15px; }
+
+.telo {
+  margin: 0 auto;
+  float: left;
+  border: 0px solid red; }
+
+.telom {
+  width: 710px;
+  border: 0px solid red;
+  margin: 5px 0 0 15px; }
+
+.telom h3 {
+  margin: 5px 0 5px 0px; }
+
+.tfdn {
+  margin: 0 0 0 130px; }
+
+.tdfdn {
+  padding: 0 2px 0 20px;
+  font-size: 14px; }
+
+.inpdnr {
+  font-size: 14px; }
+
+/*kondiciogram hlava*/
+#hlavicka {
+  margin: 0 auto;
+  width: 930px;
+  height: 85px;
+  text-align: left;
+  border: 0px solid red;
+  padding: 0 0 0 0;
+  white-space: nowrap; }
+
+#hlavicka h1 {
+  margin: 1px;
+  color: #FFF;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 1400px; }
+
+#hlavickabox {
+  width: 155px;
+  height: 85px;
+  background: url("/pict/hlmotiv_s.gif") right top no-repeat #fff;
+  float: right; }
+
+/*Marie hlava*/
+#hlavicka_marie {
+  margin: 0 auto;
+  width: 930px;
+  height: 85px;
+  text-align: left;
+  border: 0px solid red;
+  padding: 0 0 0 0;
+  white-space: nowrap; }
+
+#hlavicka_marie div.hlnadpis {
+  font-size: 38px;
+  color: #2F7ABB;
+  float: left;
+  margin: 20px 0 0 10px;
+  font-weight: bold; }
+
+#hlavicka_marie h1 {
+  margin: 38px 0 0 15px;
+  width: 440px;
+  text-align: center;
+  float: left;
+  font-size: 18px;
+  border: 0px solid red; }
+
+#hlavickabox_marie {
+  width: 155px;
+  height: 85px;
+  background: url("/pict/hlmotiv_marie.jpg") right top no-repeat #fff;
+  float: right;
+  border: 0px solid red; }
+
+#paticka {
+  padding: 25px 5px 0px 5px;
+  margin-top: 25px;
+  /*border-top: 1px solid silver;*/
+  color: Gray;
+  clear: both;
+  text-align: center;
+  word-spacing: 2px; }
+
+.hrpaticka {
+  border-top: 1px solid silver;
+  width: 100%; }
+
+#copy {
+  font-size: 10px;
+  color: Gray;
+  text-align: center;
+  margin-bottom: 30px; }
+
+#autor {
+  float: right;
+  color: #BABABA; }
+
+#logoutTime {
+  color: #BABABA;
+  font-size: 10px; }
+
+#timeInfo {
+  color: #BABABA;
+  font-size: 10px;
+  text-align: center; }
+
+.fpopis {
+  float: left;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px; }
+
+.fbox {
+  height: 35px; }
+
+/*kulaty obj*/
+#kuldiv {
+  position: relative;
+  /*width:500px;*/
+  /*height:100%;*/
+  margin: 0px;
+  /*padding:.5em;*/
+  color: #000;
+  /*background:#e4effa;*/
+  border: 10px solid #F0F8FF;
+  text-align: left; }
+
+.horlev {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: url("/pict/kulroh.png") left top no-repeat #fff; }
+
+.horprav {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: url("/pict/kulroh.png") right top no-repeat #fff; }
+
+.dollev {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  background: url("/pict/kulroh.png") left bottom no-repeat #fff; }
+
+.dolprav {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  background: url("/pict/kulroh.png") right bottom no-repeat #fff; }
+
+.horlev, .horprav, .dollev, .dolprav {
+  width: 10px;
+  height: 10px;
+  font-size: 0px; }
+
+#kuldiv .hlava {
+  text-align: left;
+  padding: 0px 0 5px 3px;
+  background: #F0F8FF;
+  color: #CC0000; }
+
+#strankovani a, #strankyAu a:visited, #strankyAu a:active {
+  padding: 3px 7px 3px 7px;
+  font-size: 13px;
+  border: 1px solid #8F8F8F;
+  margin: 2px;
+  background: #EFEFEF; }
+
+#strankovani a:hover {
+  background: #CFCFCF;
+  padding: 3px 7px 3px 7px;
+  color: red; }
+
+#strankovani span {
+  padding: 3px 7px 3px 7px;
+  background: #CFCFCF;
+  border: 1px solid #8F8F8F;
+  color: #CC0000; }
+
+#strankovani {
+  font-size: 13px;
+  padding: 10px; }
+
+#diverrinfo {
+  border: 2px solid #EC0000;
+  background: #FFFFE0;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  padding: 10px; }
+
+#diverrinfo img {
+  padding-right: 5px; }
+
+#divokinfo {
+  border: 2px solid #339967;
+  background: #FFFFE0;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  padding: 10px; }
+
+#divokinfo img {
+  padding-right: 5px; }
+
+#diviinfo {
+  border: 2px solid #B6C7DF;
+  background: #FFFFE0;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  padding: 10px; }
+
+#diviinfo img {
+  padding-right: 5px; }
+
+.bimport {
+  border: 1px solid #9F9F9F;
+  padding: 2px 10px 2px 10px;
+  background-color: #BF2F2F;
+  display: block; }
+
+.valproc {
+  width: 45px;
+  margin: 5px 5px 10px 0;
+  border: 0px solid red; }
+
+.cgr {
+  color: Gray; }
+
+.itl {
+  font-style: italic; }
+
+.fll {
+  float: left; }
+
+.flr {
+  float: right; }
+
+.pa5 {
+  padding: 5px; }
+
+.nwr {
+  white-space: nowrap; }
+
+.bo {
+  font-weight: bold; }
+
+.tal {
+  text-align: left; }
+
+.tar {
+  text-align: right; }
+
+.tac {
+  text-align: center; }
+
+.w100pr {
+  width: 100%; }
+
+.mato5 {
+  margin-top: 5px; }
+
+.mato10 {
+  margin-top: 10px; }
+
+.mato20 {
+  margin-top: 20px; }
+
+.male5 {
+  margin-left: 5px; }
+
+.male10 {
+  margin-left: 10px; }
+
+.male20 {
+  margin-left: 20px; }
+
+.pato10 {
+  padding-top: 10px; }
+
+.pato20 {
+  padding-top: 20px; }
+
+.w100 {
+  width: 100px; }
+
+.w120 {
+  width: 120px; }
+
+.clbo {
+  clear: both; }
+
+.txti {
+  font-style: italic; }
+
+.mari5 {
+  margin-right: 5px; }
+
+.tablogin {
+  margin: 20px; }
+
+/*compl.bar*/
+div.bar100c {
+  width: 283px;
+  height: 27px;
+  text-align: left;
+  margin: 0px 0 7px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 5px;
+  border: 0px solid red; }
+
+div.bar100c span {
+  font-size: 12px;
+  display: block;
+  float: left;
+  padding: 5px 0 0 5px;
+  text-align: right;
+  width: 60px; }
+
+div.bar100 {
+  width: 90px;
+  height: 17px;
+  float: left;
+  background: #fff url(/pict/bar100.gif);
+  margin: 5px 0 0 5px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1px; }
+
+div.bar100 div.wbar {
+  background: green;
+  height: 17px;
+  float: left;
+  padding: 1px; }
+
+div.bar100 div.wbar div {
+  background: url(/pict/bari.gif) repeat-x top left;
+  height: 15px; }
+
+div.bar300c {
+  width: 383px;
+  height: 26px;
+  text-align: left;
+  margin: 3px 0 7px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 5px;
+  border: 0px solid red; }
+
+div.bar300c span {
+  font-size: 14px;
+  display: block;
+  float: left;
+  padding: 10px 0 0 5px; }
+
+div.bar300 {
+  width: 300px;
+  height: 18px;
+  float: left;
+  background: #EFEFEF;
+  margin: 3px 0 0 15px;
+  padding: 0;
+  /*overflow:hidden;*/
+  font-size: 1px;
+  border: 1px solid silver; }
+
+div.bar300 div.wbark {
+  height: 18px;
+  float: left;
+  padding: 0px;
+  margin-top: 0px; }
+
+div.bar300 div.wbark div {
+  background: #5ADF53;
+  height: 18px;
+  position: relative;
+  color: #1F1F1F;
+  text-align: right;
+  padding: 0 0 0 5px; }
+
+div.bar300 div.wbarz {
+  height: 18px;
+  float: left;
+  padding: 0px;
+  margin-top: 0px; }
+
+div.bar300 div.wbarz div {
+  background: #FF8D4F;
+  height: 18px;
+  position: relative;
+  color: #1F1F1F; }
+
+div.bar300 div.stred {
+  background: #5F5F5F;
+  height: 22px;
+  position: relative;
+  left: 150px;
+  width: 1px;
+  float: left;
+  top: -2px;
+  z-index: 1000; }
+
+div.krden {
+  padding: 3px 0 0 37px;
+  font-size: 15px;
+  color: #000; }
+
+.gsip {
+  margin: 2px 2px 2px -4px;
+  z-index: -1000; }
+
+.gsipzel {
+  margin: 2px -3px 2px 2px;
+  z-index: -1000; }
+
+.hlava_le {
+  background: url("/pict/hl_le.gif") left top no-repeat;
+  width: 8px;
+  float: left;
+  height: 44px; }
+
+.hlava_st {
+  background: url("/pict/hl_st.gif") repeat-x;
+  float: left;
+  height: 44px;
+  width: 914px;
+  padding-top: 7px;
+  color: #FFF; }
+
+.hlava_ri {
+  background: url("/pict/hl_ri.gif") right top no-repeat;
+  width: 8px;
+  float: left;
+  height: 44px; }
+
+.kaldaybkg {
+  background: url("/pict/kal_bkg.gif") right top no-repeat;
+  width: 106px;
+  height: 100px;
+  float: left;
+  text-align: center; }
+
+.kaljmden {
+  color: #FFF;
+  margin: 5px 0 0 0; }
+
+.kalciden {
+  color: #5F5F5F;
+  font-size: 32px;
+  margin-top: 5px; }
+
+.kaljmmes {
+  color: #5F5F5F; }
+
+.dnesden {
+  background-color: #FF1F1F;
+  margin: 0;
+  padding: 0; }
+
+.tbjach {
+  margin: 10px 0 0 2px; }
+
+.tbjach td {
+  padding: 0px 4px 0px 4px;
+  font-family: Courier New;
+  font-size: 13px;
+  height: 20px; }
+
+.thjach td {
+  /*background-color: #66CDAA;*/
+  border-bottom: 1px solid #337EBF;
+  font-family: Arial,Tahoma;
+  padding: 5px 7px 5px 7px; }
+
+a.plsmin {
+  color: #000;
+  background-color: #FFF;
+  padding: 1px 8px 1px 8px; }
+
+a.plsmin:hover {
+  color: #000;
+  background-color: #BFE2FF;
+  z-index: -1000;
+  padding: 1px 8x 1px 8px; }
+
+.tpden {
+  width: 18px; }
+
+.trpajach td {
+  border-top: 1px solid #337EBF; }
+
+.legtab {
+  margin: 10px 0 30px 0; }
+
+.legico {
+  margin: -5px 3px 5px 20px; }
+
+.kalm {
+  margin-left: 30px; }
+
+.kalden {
+  text-align: left;
+  margin: 5px 0px 40px 10px;
+  height: 110px;
+  font-size: 14px;
+  color: #6F6F6F;
+  clear: both;
+  border: 0px solid #66CDAA; }
+
+.kaldenico {
+  float: left;
+  width: 500px; }
+
+.divkallegend {
+  clear: both;
+  padding-top: 20px; }
+
+.uvodscr {
+  padding: 5px 10px 0px 10px;
+  border: 0px solid red;
+  text-align: center; }
+
+.puvod {
+  padding-bottom: 20px; }
+
+.imggraf {
+  cursor: crosshair;
+  position: relative;
+  margin-top: 10px; }
+
+.bioico {
+  text-align: left;
+  padding: 0 0 0 35px;
+  border: 0px solid red;
+  line-height: 32px;
+  background: transparent url(/pict/bioico.png) no-repeat top left;
+  background-attachment: initial; }
+
+.grndp {
+  text-align: left;
+  padding: 20px 0 10px 0px; }
+
+.grndp span {
+  color: #CC0000; }
+
+.txtblok {
+  border: 0px solid #66CDAA;
+  float: left;
+  text-align: left;
+  clear: both; }
+
+.txtblok h3 {
+  margin: 18px 0 5px 0; }
+
+.txtblok h4 {
+  color: #0011CF; }

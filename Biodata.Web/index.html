@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html ng-app="biodataChart">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BioData | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini"  ng-controller="baseController">
+    <div class="wrapper">
+
+        <header class="main-header">
+            <!-- Logo -->
+            <a ui-sref="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>BIO</b>DATA</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>BIO</b>DATA</span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="label label-success">4</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 4 messages</li>
+
+                                <li class="footer"><a>See All Messages</a></li>
+                            </ul>
+                        </li>
+                        <!-- Notifications: style can be found in dropdown.less -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="label label-warning">10</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 10 notifications</li>
+
+                                <li class="footer"><a>View all</a></li>
+                            </ul>
+                        </li>
+                        <!-- Tasks: style can be found in dropdown.less -->
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-flag-o"></i>
+                                <span class="label label-danger">9</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 9 tasks</li>
+
+                                <li class="footer">
+                                    <a>View all tasks</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <!--<div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>Alexander Pierce</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>-->
+                <!-- search form -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <!-- /.search form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">MAIN NAVIGATION</li>
+
+                    <li><a href="#" style="cursor:pointer"><i class="fa fa-dashboard"></i> Home</a></li>
+                    
+                    <li class="active treeview">
+                        <a ui-sref="#" style="cursor:pointer">
+                            <i class="fa fa-calendar"></i>
+                            <span>Biorhythm</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class="treeview">
+                                <a href="#" data-toggle="modal" data-target="#modWaveChart">
+                                    <i class="fa fa-dashboard"></i>
+                                    <span>Wave Chart</span>
+                                    <span class="pull-right-container">
+                                        <span class="label label-primary pull-right"></span>
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#modBarChart">
+                                    <i class="fa fa-th"></i> <span>Bar chart</span>
+                                    <span class="pull-right-container">
+                                        <small class="label pull-right bg-green"></small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#modYearChart">
+                                    <i class="fa fa-pie-chart"></i>
+                                    <span>Yearly</span>
+                                   
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+
+
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+
+                <p style="font-size:20px"><b>
+                    Your Biorhythms
+                    </b>
+                        <span class="btn-group" data-placement="bottom" title="Biorhythms" data-toggle="popover" data-content="Biorhythms start from birth and are a general guide, they can be influenced by other factors like diet, alcohol consumption, drugs or medications." data-trigger="hover">
+                            <i id="helpicon" class="fa fa-question-circle"></i>
+                        </span>
+                    
+                </p>
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                    <li class="active">Biorhythm</li>
+                </ol>
+            </section>
+            <section class="content-header">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box box-danger">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Date of Birth</h3>
+                            </div>
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <input type="text"  class="form-control" ng-min="1" ng-max="31" ng-maxlength="2" maxlength="2" placeholder="date" id="birthdate" ng-model="birthdate" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="text"  class="form-control" ng-min="1" ng-max="12" ng-maxlength="2" maxlength="2" placeholder="month" id="birthmonth" ng-model="birthmonth" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                    </div>
+                                    <div class="col-xs-5">
+                                        <input type="text"  class="form-control" ng-maxlength="4" maxlength="4" placeholder="year" id="birthyear" ng-model="birthyear" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-danger">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Future date</h3>
+                            </div>
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <input type="text" name="birthday" class="form-control" min="1" max="31" maxlength="2" placeholder="date" id="biorhythmdate" ng-model="biorhythmdate" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="text" class="form-control" min="1" max="12" maxlength="2" placeholder="month" id="biorhythmmonth" ng-model="biorhythmmonth" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                    </div>
+                                    <div class="col-xs-5">
+                                        <input type="text" class="form-control" maxlength="4" placeholder="year" id="biorhythmyear" ng-model="biorhythmyear" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-danger">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Calculation</h3>
+                            </div>
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <input type="button" class="form-control btn btn-primary" ng-click="Calulate()" value="Calculate Biorhythm">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main content -->
+            <section class="content">
+                <div class="alert alert-danger" ng-show="dateError!='' && dateError!=undefined">
+                    <strong>Error!</strong> {{dateError}}.
+                </div>
+
+                <div ui-view="main"></div>
+
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 1.0
+            </div>
+            <strong>Copyright &copy; 2017-2018 <a>Your Bio Data</a>.</strong> All rights
+            reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Create the tabs -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+            </ul>
+            <!-- Tab panes -->
+
+        </aside>
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+             immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery 3 -->
+    <script src="dist/js/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="dist/js/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <!-- Bootstrap 3.3.7 -->
+    <script src="dist/js/bootstrap.min.js"></script>
+
+    <script src="scripts/lib/_variables.js"></script>
+
+    <script src="scripts/common/helper.js"></script>
+    <script src="scripts/lib/angular.js"></script>
+    <script src="scripts/lib/angular-ui-router.js"></script>
+    <script src="scripts/lib/Chart.js"></script>
+    <script src="scripts/lib/angular-chart.js"></script>
+    <script src="scripts/lib/ui-bootstrap-tpls-0.11.0.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/directives/tooltip.js"></script>
+    <script src="scripts/controllers/baseController.js"></script>
+
+
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+
+
+
+
+
+    
+    
+</body>
+</html>

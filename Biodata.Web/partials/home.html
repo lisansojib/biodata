@@ -1,0 +1,605 @@
+<style>
+    .backgrnd {
+        background-color: orangered;
+    }
+
+        .backgrnd : hover {
+            background-color: orangered;
+        }
+
+    .textCenter {
+        text-align: center;
+    }
+
+    .borderless tr, .borderless td, .borderless th {
+        border: none;
+    }
+</style>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel-group" id="accordionAll">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        Your Biorhythms
+                        &nbsp; &nbsp;
+                        <span class="btn-group" data-placement="bottom" title="Biorhythms" data-toggle="popover" data-content="Biorhythms start from birth and are a general guide, they can be influenced by other factors like diet, alcohol consumption, drugs or medications." data-trigger="hover">
+                            <i id="helpicon" class="fa fa-question-circle"></i>
+                        </span>
+
+                        <a class="collapse-link pull-right" href="javascript:;" data-toggle="collapse" data-parent="#accordionAll" data-target="#collapseAll" data-widget="collapse">
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseAll" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4" id="accordion1">
+                                <!-- Box Comment -->
+
+                                <div class="box box-widget">
+
+                                    <div class="box-header with-border">
+                                        <div class="user-block">
+                                            <span class="username" style="font-size:13px !important;" title="Your Biorhythm Waves">
+                                                Your Biorhythm Waves &nbsp; &nbsp;
+                                                <span class="btn-group" data-placement="bottom" title="Biorhythms" data-toggle="popover" data-content="Biorhythms start from birth and are a general guide, they can be influenced by other factors like diet, alcohol consumption, drugs or medications." data-trigger="hover">
+                                                    <i id="helpicon" class="fa fa-question-circle"></i>
+                                                </span>
+                                            </span>
+
+                                        </div>
+                                        <!-- /.user-block -->
+
+                                        <div class="box-tools pull-right">
+                                            <a class="collapse-link" href="javascript:;" data-toggle="collapse" data-parent="#accordion1" data-target="#collapseOne" data-widget="collapse">
+                                                <i class="fa fa-chevron-down"></i>
+                                            </a>
+                                        </div>
+
+
+                                        <!-- /.box-tools -->
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                        <a href="#" data-toggle="modal" data-target="#modWaveChart">
+                                            <!-- /.box-header -->
+                                            <div class="box-body">
+                                                <img class="img-responsive pad" src="pict/biograf1.png" alt="Photo" style="padding: 0px 10px 0px 25px">
+                                            </div>
+                                            <!-- /.box-body -->
+                                            <div class="box-footer box-comments">
+
+                                            </div>
+                                            <!-- /.box-footer -->
+                                            <div class="box-footer">
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- /.box-footer -->
+                                </div>
+                                <!-- /.box -->
+
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-4" id="accordian2">
+
+                                <!-- Box Comment -->
+                                <div class="box box-widget">
+                                    <div class="box-header with-border">
+                                        <div class="user-block">
+                                            <span class="username" style="font-size:13px !important;">
+                                                Your Biorhythm Weekly Chart &nbsp; &nbsp;
+                                                <span class="btn-group" data-placement="bottom" title="Biorhythms" data-toggle="popover" data-content="Biorhythms start from birth and are a general guide, they can be influenced by other factors like diet, alcohol consumption, drugs or medications." data-trigger="hover">
+                                                    <i id="helpicon" class="fa fa-question-circle"></i>
+                                                </span>
+                                            </span>
+
+                                        </div>
+                                        <!-- /.user-block -->
+                                        <div class="box-tools pull-right">
+                                            <a class="collapse-link" href="javascript:;" data-toggle="collapse" data-parent="#accordion2" data-target="#collapseTwo" data-widget="collapse">
+                                                <i class="fa fa-chevron-down"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.box-tools -->
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div id="collapseTwo" class="panel-collapse collapse in">
+                                        <a href="#" data-toggle="modal" data-target="#modBarChart">
+
+                                            <div class="box-body">
+                                                <img class="img-responsive pad" src="pict/biokal.png" alt="Photo" style="padding: 0px 10px 0px 85px">
+                                            </div>
+                                            <!-- /.box-body -->
+                                            <div class="box-footer box-comments">
+
+                                            </div>
+                                            <!-- /.box-footer -->
+                                            <div class="box-footer">
+
+                                            </div>
+                                            <!-- /.box-footer -->
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /.box -->
+
+                            </div>
+
+                            <div class="col-md-4" id="accordion3">
+                                <!-- Box Comment -->
+
+                                <div class="box box-widget">
+                                    <div class="box-header with-border">
+                                        <div class="user-block">
+                                            <span class="username" style="font-size:13px !important;">
+                                                Your Biorhythm Yearly Chart  &nbsp; &nbsp;
+                                                <span class="btn-group" data-placement="bottom" title="Biorhythms" data-toggle="popover" data-content="Biorhythms start from birth and are a general guide, they can be influenced by other factors like diet, alcohol consumption, drugs or medications." data-trigger="hover">
+                                                    <i id="helpicon" class="fa fa-question-circle"></i>
+                                                </span>
+                                            </span>
+
+                                        </div>
+                                        <div class="box-tools pull-right">
+                                            
+                                            <a class="collapse-link" href="javascript:;" data-toggle="collapse" data-parent="#accordion3" data-target="#collapseThree" data-widget="collapse">
+                                                <i class="fa fa-chevron-down"></i>
+                                            </a>
+                                        </div>
+                                        <!-- /.box-tools -->
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div id="collapseThree" class="panel-collapse collapse in">
+                                        <a href="#" data-toggle="modal" data-target="#modYearChart">
+                                            <div class="box-body">
+                                                <img class="img-responsive pad" src="pict/biotab.png" alt="Photo" style="padding: 0px 10px 0px 55px">
+                                            </div>
+                                            <!-- /.box-body -->
+                                            <div class="box-footer box-comments">
+
+                                            </div>
+                                            <!-- /.box-footer -->
+                                            <div class="box-footer">
+
+                                            </div>
+                                            <!-- /.box-footer -->
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /.box -->
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modWaveChart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                </button>
+                <h3 class="modal-title" id="exampleModalLabel">
+                    Your Biorhythm Waves
+
+                    &nbsp; &nbsp;
+                    <span class="btn-group" data-placement="bottom" title="Biorhythms" data-toggle="popover" data-content="Biorhythms start from birth and are a general guide, they can be influenced by other factors like diet, alcohol consumption, drugs or medications." data-trigger="hover">
+                        <i id="helpicon" class="fa fa-question-circle"></i>
+                    </span>
+                </h3>
+
+            </div>
+            <div class="modal-body">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            <strong>Primary biorhythm cycles</strong>
+                            <!--<h3>Primary biorhythm cycles</h3>-->
+                            23 days physical cycle, 28 days emotional cycle and 33 days intellectual cycle. Each of these cycles oscillates following a sine wave between positive and negative values.<br />
+                            Critical days are the days when the wave crosses the zero line. Women are more affected by the emotional biorhythm, men are more affected by the physical biorhythm.
+
+                            <br class="clbo" />
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text18 grndp">Primary biorhythm cycles: <span class="bo" id=biopri_s>{{DateDisplay}}</span></div>
+                                <div>
+                                    <div class="fll bioico w120" id="biopri_w0" style="line-height: 33px;width:150px">
+                                        Physical: <B id="biopri_o0" style="color:#58AF57;">{{SelectedData.Physical}}%</B>
+                                    </div>
+                                    <div class="fll bioico w120" id="biopri_w1" style="line-height: 33px;width:150px">
+                                        Emotional: <B id="biopri_o1" style="color:#DF642E">{{SelectedData.Emotional}}%</B>
+                                    </div>
+                                    <div class="fll bioico w120" id="biopri_w2" style="line-height: 33px;width:150px">
+                                        Intellectual: <B id="biopri_o2" style="color:#43A1E2">{{SelectedData.Intellectual}}%</B>
+                                    </div>
+                                    <div class="fll" id="biopri_w3" style="line-height: 33px;width:150px">
+                                        Average: <B id="biopri_o3" style="color:#8F8F8F">{{SelectedData.Average}}%</B>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="row">
+                            <div class="chart">
+                                <canvas id="biopri" class="chart chart-line imggraf" chart-data="data" chart-legend="true"
+                                        chart-labels="labels" chart-series="series" chart-options="options1"
+                                        border=0 alt="Klasický cyklus"></canvas>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="txtblok">
+
+                                    <h3>What do biorhythms affect</h3>
+                                    <p><strong>Physical cycle</strong> (lasts  23 days) affects physical fitness, strength and stamina</p>
+                                    <p><strong>Emotional cycle</strong> (lasts  28 days) affects mood, emotions, perception and creativity</p>
+                                    <p><strong>Intellectual cycle</strong> (lasts  33 days) affects thinking, learning, memory, communication, logic and analytical abilities</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /.chart-responsive -->
+                    </div>
+                    <!-- /.col -->
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12"><br /></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12"><input type="checkbox" ng-checked="secondaryCheck()" ng-model="isSecondary" />Secondary biorhythms</div>
+                </div>
+
+                <div class="row" ng-show="isSecondary">
+                    <div class="col-md-12">
+                        <p class="text-center">
+
+                            <br class="clbo" />
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text18 grndp">Secondary biorhythm cycles: <span class="bo" id=biose_s>{{DateDisplay}}</span></div>
+                                <div>
+                                    <div class="fll bioico w100" id="biose_w0" style="line-height: 33px;width:150px">
+                                        Intuitive: <B id="biose_o0" style="color:#58AF57;">{{SelectedDataSecondary.Intuitive}}%</B>
+                                    </div>
+                                    <div class="fll bioico w100" id="biose_w1" style="line-height: 33px;width:150px">
+                                        Aesthetic: <B id="biose_o1" style="color:#DF642E">{{SelectedDataSecondary.Aesthetic}}%</B>
+                                    </div>
+                                    <div class="fll bioico w100" id="biose_w2" style="line-height: 33px;width:150px">
+                                        Spiritual: <B id="biose_o2" style="color:#43A1E2">{{SelectedDataSecondary.Spiritual}}%</B>
+                                    </div>
+                                    <div class="fll" id="biose_w4" style="line-height: 33px;width:150px">
+                                        Average: <B id="biose_o4" style="color:#8F8F8F">{{SelectedDataSecondary.Average}}%</B>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="row">
+                            <div class="chart">
+                                <canvas id="biose" class="chart chart-line imggraf" chart-data="dataSecondary" chart-legend="true"
+                                        chart-labels="labelsSecondary" chart-series="seriesSecondary" chart-options="options1"
+                                        border=0 alt="Sekundární cyklus"></canvas>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="txtblok">
+
+                                    <h3>Secondary biorhythms</h3>
+                                    <p><strong>Intuitive cycle</strong>  with 38 days period affects the ability to predict and the decision making ability</p>
+                                    <p><strong>Aesthetic  cycle</strong> with 43 days period affects creativity and creative skills</p>
+                                    <p><strong>Spiritual  cycle</strong> (psychic, spiritual) has a period of 53 days and affects the perception and the personal relationship to what exceeds a person: to God</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /.chart-responsive -->
+                    </div>
+                    <!-- /.col -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modBarChart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                </button>
+                <h3 class="modal-title" id="exampleModalLabel">
+                    Your Weekly biorhythm chart
+
+                    &nbsp; &nbsp;
+                    <span class="btn-group" data-placement="bottom" title="Biorhythms" data-toggle="popover" data-content="Biorhythms start from birth and are a general guide, they can be influenced by other factors like diet, alcohol consumption, drugs or medications." data-trigger="hover">
+                        <i id="helpicon" class="fa fa-question-circle"></i>
+                    </span>
+                </h3>
+
+            </div>
+            <div class="modal-body">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+
+
+                        <p class="text-center">
+                            The biorhythm calendar shows overview of basic biorhythms during 7 days. The negative values of biorhythms are shown red or orange to the left of zero (from the centre of the scale), positive values are shown green to the right of zero. The arrow on the color scale indicates if the value is trending upward or downward.
+                        </p>
+
+                        <br class="clbo" />
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="bo kalden" ng-repeat="bar in BarGraphData">
+                                    <div class="kaldaybkg"><div class="kaljmden">{{bar.dayname}}</div><div class="kalciden">{{bar.datenum}}</div><div class="kaljmmes">{{bar.monthname}}</div></div><div class="kaldenico">
+                                        <div class="bar300c">
+                                            <img src="/pict/fyz.gif" class="fll" alt="Physical" title="Physical">
+                                            <div class="bar300">
+                                                <div class="stred">
+                                                </div>
+                                                <div style="{{bar.BiorhythmDetails.PhysicalWidth}}" class="{{bar.BiorhythmDetails.PhysicalClass}}">
+                                                    <div style="{{bar.BiorhythmDetails.PhysicalStyle}}">{{bar.BiorhythmDetails.Physical}}%
+                                                        <img ng-if="!bar.BiorhythmDetails.PhysicalLeftToRight && !bar.BiorhythmDetails.IsPhysicalGreen" src="/pict/gsred_le.gif" class="gsip" width="13" height="13" border="0">
+                                                        <img ng-if="bar.BiorhythmDetails.PhysicalLeftToRight && !bar.BiorhythmDetails.IsPhysicalGreen" src="/pict/gsred_ri.gif" class="gsip" width="13" height="13" border="0">
+                                                        <img ng-if="!bar.BiorhythmDetails.PhysicalLeftToRight && bar.BiorhythmDetails.IsPhysicalGreen" src="/pict/gszel_le.gif" class="gsip" width="13" height="13" border="0">
+                                                        <img ng-if="bar.BiorhythmDetails.PhysicalLeftToRight && bar.BiorhythmDetails.IsPhysicalGreen" src="/pict/gszel_ri.gif" class="gsip" width="13" height="13" border="0">
+
+                                                       
+                                                        <!--<img src="/pict/gszel_ri.gif" class="gsipzel" width="13" height="13" border="0">-->
+                                                    </div>
+                                                </div>
+                                            </div><span></span>
+                                        </div>
+                                        <div style="clear:both">
+                                        </div>
+                                        <div class="bar300c">
+                                            <img src="/pict/psy.gif" class="fll" alt="Emotional" title="Emotional">
+                                            <div class="bar300">
+                                                <div class="stred"></div>
+                                                <div style="{{bar.BiorhythmDetails.EmotionalWidth}}" class="{{bar.BiorhythmDetails.EmotionalClass}}">
+
+                                                    <div style="{{bar.BiorhythmDetails.EmotionalStyle}}">{{bar.BiorhythmDetails.Emotional}}%
+                                                        <img ng-if="!bar.BiorhythmDetails.EmotionalLeftToRight && !bar.BiorhythmDetails.IsEmotionalGreen" src="/pict/gsred_le.gif" class="gsip" width="13" height="13" border="0">
+                                                        <img ng-if="bar.BiorhythmDetails.EmotionalLeftToRight && !bar.BiorhythmDetails.IsEmotionalGreen" src="/pict/gsred_ri.gif" class="gsip" width="13" height="13" border="0">
+                                                        <img ng-if="!bar.BiorhythmDetails.EmotionalLeftToRight && bar.BiorhythmDetails.IsEmotionalGreen" src="/pict/gszel_le.gif" class="gsip" width="13" height="13" border="0">
+                                                        <img ng-if="bar.BiorhythmDetails.EmotionalLeftToRight && bar.BiorhythmDetails.IsEmotionalGreen" src="/pict/gszel_ri.gif" class="gsip" width="13" height="13" border="0">
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span></span>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                        <div class="bar300c">
+                                            <img src="/pict/int.gif" class="fll" alt="Intellectual" title="Intellectual">
+                                            <div class="bar300">
+                                                <div class="stred"></div>
+                                                <div style="{{bar.BiorhythmDetails.IntellectualWidth}}" class="{{bar.BiorhythmDetails.IntellectualClass}}">
+                                                    <div style="{{bar.BiorhythmDetails.IntellectualStyle}}">{{bar.BiorhythmDetails.Intellectual}}%
+                                                        <img ng-if="!bar.BiorhythmDetails.IntellectualLeftToRight && !bar.BiorhythmDetails.IsIntellectualGreen" src="/pict/gsred_le.gif" class="gsip" width="13" height="13" border="0">
+                                                        <img ng-if="bar.BiorhythmDetails.IntellectualLeftToRight && !bar.BiorhythmDetails.IsIntellectualGreen" src="/pict/gsred_ri.gif" class="gsip" width="13" height="13" border="0">
+                                                        <img ng-if="!bar.BiorhythmDetails.IntellectualLeftToRight && bar.BiorhythmDetails.IsIntellectualGreen" src="/pict/gszel_le.gif" class="gsip" width="13" height="13" border="0">
+                                                        <img ng-if="bar.BiorhythmDetails.IntellectualLeftToRight && bar.BiorhythmDetails.IsIntellectualGreen" src="/pict/gszel_ri.gif" class="gsip" width="13" height="13" border="0">
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div><span></span>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="divkallegend">
+                                    <img src="/pict/fyz.gif" alt="Physical condition" class="legico" title="Physical condition">Physical condition
+                                    <img src="/pict/psy.gif" alt="Emotional condition" class="legico" title="Emotional condition">Emotional condition
+                                    <img src="/pict/int.gif" alt="Intellectual condition" class="legico" title="Intellectual condition">Intellectual condition
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modYearChart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                </button>
+                <h3 class="modal-title" id="exampleModalLabel">
+                    Your yearly biorhythm chart
+
+                    &nbsp; &nbsp;
+                    <span class="btn-group" data-placement="bottom" title="Biorhythms" data-toggle="popover" data-content="Biorhythms start from birth and are a general guide, they can be influenced by other factors like diet, alcohol consumption, drugs or medications." data-trigger="hover">
+                        <i id="helpicon" class="fa fa-question-circle"></i>
+                    </span>
+                </h3>
+
+            </div>
+            <div class="modal-body">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+
+
+                        <p class="text-center">
+                            Biorhythm chart is mathematically processes overview of biorhythms of so called positive and critical days. In a simplified form, positive value is marked by the + symbol and negative biorhythm value is marked by the – symbol every day, semi critical day is marked by the letter S and critical day by ! (exclamation mark).
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                <div class="table-responsive">
+                                    <table class="table borderless">
+                                        <tr>
+                                            <th>&nbsp; </th>
+                                            <th class="textCenter">January <br /><span class="textCenter">FEI</span>  </th>
+                                            <th class="textCenter"> February <br /><span class="textCenter">FEI</span> </th>
+                                            <th class="textCenter"> March <br /><span class="textCenter">FEI</span> </th>
+                                            <th class="textCenter">  April <br /><span class="textCenter">FEI</span></th>
+                                            <th class="textCenter">  May <br /><span class="textCenter">FEI</span></th>
+                                            <th class="textCenter"> June <br /><span class="textCenter">FEI</span> </th>
+                                            <th class="textCenter">  July <br /><span class="textCenter">FEI</span></th>
+                                            <th class="textCenter">  August <br /><span class="textCenter">FEI</span></th>
+                                            <th class="textCenter"> September <br /><span class="textCenter">FEI</span> </th>
+                                            <th class="textCenter">  October <br /><span class="textCenter">FEI</span></th>
+                                            <th class="textCenter">  November <br /><span class="textCenter">FEI</span></th>
+                                            <th class="textCenter">  December <br /><span class="textCenter">FEI</span></th>
+                                        </tr>
+                                        <tr ng-repeat="year in CurrentYearData">
+                                            <td>{{$index +1}}</td>
+                                            <td ng-repeat="day in year" title="{{day[0].title}}" ng-class="{backgrnd: day[0].date == current}">
+                                                <div class="textCenter" style="background-color:white;">
+                                                    <span ng-show="day[0].BiorhythmDetails.Physical<0">-</span>
+                                                    <span ng-show="day[0].BiorhythmDetails.Physical==0">!</span>
+                                                    <span ng-show="day[0].BiorhythmDetails.Physical>0">+</span>
+                                                    <!--<span ng-show="day[0].BiorhythmDetails.Physical==-0">S</span>-->
+
+                                                    <span ng-show="day[0].BiorhythmDetails.Emotional<0">-</span>
+                                                    <span ng-show="day[0].BiorhythmDetails.Emotional==0">!</span>
+                                                    <span ng-show="day[0].BiorhythmDetails.Emotional>0">+</span>
+                                                    <!--<span ng-show="day[0].BiorhythmDetails.Emotional==-0">S</span>-->
+
+                                                    <span ng-show="day[0].BiorhythmDetails.Intellectual<0">-</span>
+                                                    <span ng-show="day[0].BiorhythmDetails.Intellectual==0">!</span>
+                                                    <span ng-show="day[0].BiorhythmDetails.Intellectual>0">+</span>
+                                                    <!--<span ng-show="day[0].BiorhythmDetails.Intellectual==-0">S</span>-->
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                Key:&nbsp;
+                                F - Physical  &nbsp;&nbsp;  E - Emotional &nbsp; &nbsp;    I - Intellectual
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                Den:&nbsp;  + - positive    - - negative    S - semi critical    ! - critical
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#modWaveChart').on('shown.bs.modal', function (event) {
+        var appElement = document.querySelector('[ng-controller=baseController]');
+        var appScope = angular.element(appElement).scope();
+        appScope.CalulateBiorhythmWave();
+        var canvas = document.getElementById('biopri');
+        // var context = canvas.getContext('2d');
+        if (canvas != null) {
+            canvas.addEventListener('mousemove', function (evt) {
+                var minimumDate = new Date($("#birthmonth").val() + "-" + $("#birthdate").val() + "-" + $("#birthyear").val());
+                var lastDate = new Date($("#biorhythmmonth").val() + "-" + $("#biorhythmdate").val() + "-" + $("#biorhythmyear").val());
+                var age = dateDiffInDays(minimumDate, lastDate);
+
+                biopos(evt, this, age, [-7, 67], ['Math.sin(2*Math.PI*(s/23))', 'Math.sin(2*Math.PI*(s/28))', 'Math.sin(2*Math.PI*(s/33))', '(Math.sin(2*Math.PI*(s/23))+Math.sin(2*Math.PI*(s/28))+Math.sin(2*Math.PI*(s/33)))/3'], [lastDate.getDate().toString(), (lastDate.getMonth() + 1).toString(), lastDate.getFullYear().toString()], 0);
+
+            }, false);
+
+            canvas.addEventListener('mouseout', function (evt) {
+                var minimumDate = new Date($("#birthmonth").val() + "-" + $("#birthdate").val() + "-" + $("#birthyear").val());
+                var lastDate = new Date($("#biorhythmmonth").val() + "-" + $("#biorhythmdate").val() + "-" + $("#biorhythmyear").val());
+                var age = dateDiffInDays(minimumDate, lastDate);
+
+                biopos(false, this, age, [-7, 67], ['Math.sin(2*Math.PI*(s/23))', 'Math.sin(2*Math.PI*(s/28))', 'Math.sin(2*Math.PI*(s/33))', '(Math.sin(2*Math.PI*(s/23))+Math.sin(2*Math.PI*(s/28))+Math.sin(2*Math.PI*(s/33)))/3'], [lastDate.getDate().toString(), (lastDate.getMonth() + 1).toString(), lastDate.getFullYear().toString()], 0);
+
+            }, false);
+        }
+        var modal = $(this);
+
+    }).on('hidden.bs.modal', function (event) {
+        // destroy modal
+        $(this).data('bs.modal', null);
+    });
+
+    $('#modBarChart').on('shown.bs.modal', function (event) {
+
+        var appElement = document.querySelector('[ng-controller=baseController]');
+        var appScope = angular.element(appElement).scope();
+        appScope.CalulateBiorhythmBarGraph();
+        var modal = $(this);
+
+    }).on('hidden.bs.modal', function (event) {
+        // destroy modal
+        $(this).data('bs.modal', null);
+    });
+
+    $('#modYearChart').on('shown.bs.modal', function (event) {
+
+        var appElement = document.querySelector('[ng-controller=baseController]');
+        var appScope = angular.element(appElement).scope();
+        // appScope.CalulateBiorhythmYearly();
+        var modal = $(this);
+
+    }).on('hidden.bs.modal', function (event) {
+        // destroy modal
+        $(this).data('bs.modal', null);
+    });
+    $(document).ready(function () {
+
+        // Collapse ibox function
+        $('.collapse-link').on('click', function () {
+            var ibox = $(this).closest('div.ibox');
+            var button = $(this).find('i');
+            var content = ibox.children('.ibox-content');
+            content.slideToggle(200);
+            button.toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
+            ibox.toggleClass('').toggleClass('border-bottom');
+            setTimeout(function () {
+                ibox.resize();
+                ibox.find('[id^=map-]').resize();
+            }, 50);
+        });
+
+    });
+</script>
